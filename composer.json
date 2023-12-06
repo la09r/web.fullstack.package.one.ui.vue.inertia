@@ -1,0 +1,40 @@
+{
+    "name": "la09r/web-fullstack-package-one-ui-vue-inertia",
+    "type": "library",
+    "description": "Package for Development",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Aleksandr Gorchakov",
+            "email": "alexander.gorchakov.leto@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/ui": "4.2.2",
+        "tightenco/ziggy": "1.8.1",
+        "inertiajs/inertia-laravel": "0.6.11",
+        "illuminate/support": "^10.32",
+        "la09r/web-fullstack-starter-kit-ui-vue-inertia": "^10.1",
+        "la09r/web-fullstack-starter-kit-ui-vue-inertia-users": "^10.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LA09R\\PackageOne\\App\\": "src/app/",
+            "LA09R\\PackageOne\\App\\Providers\\": "src/app/Providers",
+            "LA09R\\PackageOne\\App\\Http\\Controllers\\": "src/app/Http/Controllers"
+        },
+        "files": [
+
+        ]
+
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LA09R\\PackageOne\\App\\Providers\\AppServiceProvider"
+            ]
+        }
+    }
+}
